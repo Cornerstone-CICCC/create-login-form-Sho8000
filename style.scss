@@ -1,0 +1,200 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #d4ccb6;
+  .primary{
+    color: #ffc632 !important;
+  }
+  .formText{
+    color: #afb6c2;
+  }
+}
+
+.inputBox:active{
+  outline: none !important;
+}
+
+@media only screen and (max-width:425px){
+  .FormPage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #191816;
+    display: grid;
+    grid-template-columns: 1fr;
+    .Left{
+      justify-self: center;
+      align-self: center;
+      .logo{
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+      }
+      .FormBox{
+        width: 80vw;
+        min-height: 60vh;
+        background-color: #24221f;  
+        .Login{
+          display: flex;
+          width: 80%;
+          margin: auto;
+          #log-in{
+            display: inline-block;
+            margin-top: 2rem;
+          }
+          #Login{
+            display: inline-block;
+            margin-top: 2rem;
+            margin-bottom: 0;
+            margin-left: 10px;
+          }
+        }
+        .form{
+          width: 80%;
+          margin: auto;
+          .InsertInformationAttention{
+            margin-top: 0;
+          }
+          label{
+            display: block;
+            margin-top: 2rem;
+          }
+          .inputBox{
+            height: 40px;
+            width: 100%;
+            background-color: transparent;
+            border: 2px #afb6c2 solid;
+            border-radius: 5px;
+            padding-left: 10px;
+            box-sizing: border-box;
+          }
+          #email{
+            color: white;
+          }
+          #password{
+            color: white;
+          }
+          .InlineBlock{
+            display: inline-block;
+          }
+          .checkbox{
+          }
+/*           .R{
+            float: right;
+            margin-top: 2rem;
+          }
+ */          .button{
+            display: block;
+            width: 100%;
+            height: 50px;
+            background-color: #ffc632;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+          }
+          .SignUp{
+            text-align: center;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .Right{
+      display: none;
+    }
+  }   
+}
+
+@media only screen and (min-width:426px){
+  .FormPage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #191816;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .Left{
+      justify-self: center;
+      align-self: center;
+      .logo{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+      }
+      .FormBox{
+        width: 40vw;
+        min-height: 60vh;
+        background-color: #24221f;  
+        .Login{
+          display: flex;
+          width: 70%;
+          margin: auto;
+          #log-in{
+            display: inline-block;
+            margin-top: 4rem;
+          }
+          #Login{
+            display: inline-block;
+            margin-top: 4rem;
+            margin-bottom: 0;
+            margin-left: 10px;
+          }
+        }
+        .form{
+          width: 70%;
+          margin: auto;
+          .InsertInformationAttention{
+            margin-top: 0;
+          }
+          label{
+            display: block;
+            margin-top: 2rem;
+          }
+          .inputBox{
+            height: 40px;
+            width: 100%;
+            background-color: transparent;
+            border: 2px #afb6c2 solid;
+            border-radius: 5px;
+            padding-left: 10px;
+            box-sizing: border-box;
+          }
+          #email{
+            color: white;
+          }
+          #password{
+            color: white;
+          }
+          .InlineBlock{
+            display: inline-block;
+          }
+          .checkbox{
+          }
+          .R{
+            float: right;
+            margin-top: 2rem;
+          }
+          .button{
+            display: block;
+            width: 100%;
+            height: 50px;
+            background-color: #ffc632;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+          }
+          .SignUp{
+            text-align: center;
+          }
+        }
+      }
+    }
+    .Right{
+      justify-self: center;
+      background-color: white;
+      img{
+        height: 100vh;
+        max-width: 50vw;
+      }
+    }
+  }   
+}

@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="FormPage">
+      <div class="Left">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="FormBox">
+          <div class="Login">
+            <img src="images/log-in.svg" alt="log-in" id="log-in">
+            <h2 id="Login">Login</h2>
+          </div>
+          <div class="form">
+            <p class="formText InsertInformationAttention">Insert your information below.</p>
+            <form action="" method="get">
+              <label for="email" class="formText">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Type your email" class="inputBox">
+              <label for="password" id="password" class="formText">Password</label>
+              <input type="password" id="password" name="password" placeholder="Type your password" class="inputBox">
+              <input type="checkbox" name="Remind" id="Remind" value="Remind" class="checkbox">
+              <label for="Remind" class="formText InlineBlock">Remind me</label>
+              <p class="primary R"><strong>Forgot my password</strong></p>
+              <button type="submit" class="button">LOGIN</button>
+              <p class="primary SignUp">Don't have an account? <strong>Sing up!</strong></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="Right">
+        <img src="images/side-image-2x.jpg" alt="Picture">
+      </div>
+    </div>
+    <script src="function.js"></script>
+  </body>
 </html>
