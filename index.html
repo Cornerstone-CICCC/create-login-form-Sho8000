@@ -20,16 +20,34 @@
           </div>
           <div class="form">
             <p class="formText InsertInformationAttention">Insert your information below.</p>
-            <form action="" method="get">
+            <form id="Form">
+<!--               <input type="hidden" name="access_key" value="a44bea13-41ca-4ccf-a6ef-87776757696e">
+              <input type="hidden" name="subject" value="ContactFORMS">
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
+ -->
               <label for="email" class="formText">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Type your email" class="inputBox">
-              <label for="password" id="password" class="formText">Password</label>
-              <input type="password" id="password" name="password" placeholder="Type your password" class="inputBox">
-              <input type="checkbox" name="Remind" id="Remind" value="Remind" class="checkbox">
-              <label for="Remind" class="formText InlineBlock">Remind me</label>
-              <p class="primary R"><strong>Forgot my password</strong></p>
-              <button type="submit" class="button">LOGIN</button>
-              <p class="primary SignUp">Don't have an account? <strong>Sing up!</strong></p>
+              <div class="InputContainer">
+                <img src="images/mail.svg" alt="mailPic" class="IconNormalL" id="IconNormalLEmail">
+                <img src="images/mail-focus.svg" alt="mailPic" class="IconFocusL hide" id="IconFocusEmail">
+                <input type="email" id="email" name="email" placeholder="Type your email" class="inputBox">
+              </div>
+              <label for="password" class="formText">Password</label>
+              <div class="InputContainer" id="PasswordContainer">
+                <img src="images/lock.svg" alt="lockPic" class="IconNormalL" id="IconNormalLPass">
+                <img src="images/lock-focus.svg" alt="lockPic" class="IconFocusL hide" id="IconFocusPass">
+                <img src="images/eye.svg" alt="eyesPic" class="IconNormalR hide" id="EyeOpen">
+                <img src="images/eye-closed.svg" alt="eyesPic" class="IconCloseR" id="EyeClose">
+                <input type="password" id="password" name="password" placeholder="Type your password" class="inputBox">
+              </div>
+              <div class="checkBoxContainer">
+                <div class="checkBox"></div>
+                <img src="images/check.svg" alt="check" class="CheckImg hide">
+                <input type="checkbox" name="Remind" id="Remind" value="Remind" class="checkboxOriginal">
+                <label for="Remind" class="formText InlineBlock RemindText">Remind me</label>
+                <a href=""><p class="primary R"><strong>Forgot my password</strong></p></a>
+                </div>
+              <button type="submit" class="button" id="LOGIN">LOGIN</button>
+              <a href="" class="ALink"><p class="primary SignUp">Don't have an account? <strong>Sign up!</strong></p></a>
             </form>
           </div>
         </div>
