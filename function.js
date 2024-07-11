@@ -19,12 +19,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   const CheckBoxImg = document.getElementsByClassName("CheckImg");
   let toggle = "close";
 
-  //For Login
-  const Login = document.getElementById("LOGIN")
-  const Form = document.getElementById("Form")
-  const formData = new FormData(Form)
-  const FormInfo = Object.fromEntries(formData)
-
   IconEmail.addEventListener("focus",()=>{
     IconNormalEmail.classList.add("hide")
     InputBoxHighlight[0].classList.add("highlight")
@@ -71,9 +65,20 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
   });
 
-  Login.addEventListener("submit",(event)=>{
+  //For LoginInfo
+  Form.addEventListener("submit",(event)=>{    
     event.preventDefault();
-    console.log(FormInfo);
-    console.log("hello")
+    const Form = document.getElementById("Form")
+    const formData = {
+      UserEmail: IconEmail.value,
+      UserPassword: IconPass.value,
+      Remind: CheckBoxOriginal.checked
+    };
+    IconEmail.value = "";
+    IconPass.value = "";
+    ChangeCheckBox[0].classList.remove("BoxColorYellow")
+    CheckBoxImg[0].classList.add("hide")
+    CheckBoxOriginal.checked = false;
+    console.log(formData);
   });
 });
